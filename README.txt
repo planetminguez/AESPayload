@@ -8,3 +8,6 @@ Use 'xpwntool file.img3 /dev/null' to extract the KBAG hex string from file.img3
 Start irecovery console: irecovery -s
 Execute 'go aes dec _KBAG_STRING_' in irecovery console
 ~Haifisch
+
+Uses code from Chronic-Dev syringe & cyanide
+Nuff' said.
