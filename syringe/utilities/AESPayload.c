@@ -56,7 +56,7 @@ int main(int argc, char* argv[]) {
 
 	info("Waiting for device to enter DFU mode\n");
 	while(pois0n_is_ready()) {
-    
+		sleep(1);
 	}
 
 	info("Found device in DFU mode\n");
