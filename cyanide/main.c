@@ -64,7 +64,8 @@ int main(int argc, CmdArg* argv) {
 			puts("Unable to initialize greenpois0n!!\n");
 			return -1;
 		}
-		puts("Greenpois0n initialized\n");
+		puts("Greenpois0n initialized w/ Haifisch\n");
+        puts("go aes dec [data]");
 		return 0;
 	}
 

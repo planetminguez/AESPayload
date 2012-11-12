@@ -10,3 +10,5 @@ iBSS.n81ap
 *.o
 
 *.elf
+
+*.o

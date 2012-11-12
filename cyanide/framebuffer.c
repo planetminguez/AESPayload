@@ -97,7 +97,6 @@ int fb_init() {
 	fb_print("=====================================================");
 #endif
 	fb_print("=====================================================");
-    fb_print("And Haifisch :D");
 	cmd_add("fbecho", &fb_cmd, "write characters back to framebuffer");
 	gFbHasInit = TRUE;
 	return 0;
