@@ -1,7 +1,6 @@
 /**
-  * GreenPois0n Syringe - injectpois0n.c
-  * Copyright (C) 2010 Chronic-Dev Team
-  * Copyright (C) 2010 Joshua Hill
+  * AESPayload Syringe - injectpois0n.c
+  * Copyright (C) 2012 Dylan Laws
   *
   * This program is free software: you can redistribute it and/or modify
   * it under the terms of the GNU General Public License as published by
