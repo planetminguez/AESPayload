@@ -84,13 +84,13 @@ int fb_init() {
 	fb_print("                          ");
 #endif
 
-	fb_print("                     greenpois0n                     ");
+	fb_print("                 Haifisch - AESPayload               ");
 
 #ifdef S5L8930X
 	fb_print("                                                     ");
 #endif
 
-	fb_print("              http://www.greenpois0n.com             ");
+	fb_print("                  http://haifisch.me                 ");
 
 #ifdef S5L8930X
 	fb_print("                           ");

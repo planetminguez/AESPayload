@@ -64,8 +64,21 @@ int main(int argc, CmdArg* argv) {
 			puts("Unable to initialize greenpois0n!!\n");
 			return -1;
 		}
-		puts("Greenpois0n initialized w/ Haifisch\n");
-        puts("go aes dec [data]");
+        puts("---------------------------\n");
+        puts("Info and Credits\n");
+		puts("===========================\n");
+        puts("Chronic-Dev's Open Source code is awesome, check it out\n");
+        puts("Packaged by Haifisch\n");
+        puts("Compiled " __DATE__ " " __TIME__ "\n");
+        puts("===========================\n");
+        puts("\n\n");
+        puts("db   db  .d8b.  d888888b d88888b d888888b .d8888.  .o88b. db   db\n");
+        puts("88   88 d8' `8b   `88'   88'       `88'   88'  YP d8P  Y8 88   88\n");
+        puts("88ooo88 88ooo88    88    88ooo      88    `8bo.   8P      88ooo88\n");
+        puts("88~~~88 88~~~88    88    88~~~      88      `Y8b. 8b      88~~~88\n");
+        puts("88   88 88   88   .88.   88        .88.   db   8D Y8b  d8 88   88\n");
+        puts("YP   YP YP   YP Y888888P YP      Y888888P `8888Y'  `Y88P' YP   YP\n");
+        
 		return 0;
 	}
 
