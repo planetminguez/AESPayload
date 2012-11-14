@@ -1,14 +1,6 @@
 
 .DS_Store
-*.o
+.o
 iBSS.n81ap
 
-*.elf
-
-*.
-
-*.o
-
-*.elf
-
-*.o
+.elf
