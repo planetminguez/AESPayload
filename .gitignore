@@ -1,5 +1,6 @@
 
 .DS_Store
-*.o
+syringe/syringe/*.o
+syringe/utilities/*.o
 iBSS.n81ap
 *.elf
