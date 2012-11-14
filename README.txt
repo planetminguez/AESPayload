@@ -1,4 +1,4 @@
-Cool, AESPayload thingy… Woot?
+Cool, AESPayload syringe… Woot?
 Run the make.sh file 
 Wait
 Wait
