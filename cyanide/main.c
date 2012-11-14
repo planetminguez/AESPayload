@@ -68,6 +68,7 @@ int main(int argc, CmdArg* argv) {
         puts("Info and Credits\n");
 		puts("===========================\n");
         puts("Chronic-Dev's Open Source code is awesome, check it out\n");
+        puts("iH8sn0w's code");
         puts("Packaged by Haifisch\n");
         puts("Compiled " __DATE__ " " __TIME__ "\n");
         puts("===========================\n");
@@ -113,6 +114,7 @@ int main(int argc, CmdArg* argv) {
 		printf("Command %s not found.\n\n", command);
 		return -1;
 	}
+    
 
 	return 0;
 }
