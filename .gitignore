@@ -6,3 +6,5 @@ iBSS.n81ap
 *.elf
 
 .irecovery
+
+*.pbxproj
