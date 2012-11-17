@@ -6,11 +6,11 @@ have one ready to be used.
 
 What devices can I use?
 ----------------------
-*iPhone 3GS
-*iPhone 3G
-*iPhone 4 (GSM)
-*iPhone 2G
-*iPod 4G
-*iPod 3G
-*iPod 2G
-*iPod 1G
+* iPhone 3GS
+* iPhone 3G
+* iPhone 4 (GSM)
+* iPhone 2G
+* iPod 4G
+* iPod 3G
+* iPod 2G
+* iPod 1G
