@@ -228,6 +228,8 @@ LIBIRECOVERY_EXPORT irecv_error_t irecv_set_interface(irecv_client_t client, int
 LIBIRECOVERY_EXPORT irecv_error_t irecv_get_cpid(irecv_client_t client, unsigned int* cpid);
 LIBIRECOVERY_EXPORT irecv_error_t irecv_get_bdid(irecv_client_t client, unsigned int* bdid);
 LIBIRECOVERY_EXPORT irecv_error_t irecv_get_ecid(irecv_client_t client, unsigned long long* ecid);
+    LIBIRECOVERY_EXPORT irecv_error_t irecv_get_imei(irecv_client_t client, unsigned long long* imei);
+    LIBIRECOVERY_EXPORT irecv_error_t irecv_get_srnm(irecv_client_t client, unsigned long long* srnm);
 LIBIRECOVERY_EXPORT void irecv_hexdump(unsigned char* buf, unsigned int len, unsigned int addr);
 
 LIBIRECOVERY_EXPORT void irecv_init();

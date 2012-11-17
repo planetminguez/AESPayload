@@ -17,8 +17,13 @@
  **/
 
 #include <stdio.h>
+#include <string.h>
 #include <unistd.h>
+#include <fcntl.h>
+#include <stdlib.h>
 #include "libpois0n.h"
+#include "libirecovery.h"
+#define FILE_HISTORY_PATH "aes.log"
 #ifdef COMMIT
 #define STRINGIFY(x) #x
 #define XSTRINGIFY(x) STRINGIFY(x)
@@ -26,9 +31,7 @@
 #else
 #define COMMIT_STRING ""
 #endif
-
-#define LOADIBEC_VERSION "2.00"
-
+#define VERSION "2.5"
 int upload_ibss();
 int upload_ibss_payload();
 
@@ -68,41 +71,23 @@ int progress_cb(irecv_client_t client, const irecv_event_t* event) {
 	}
 	return 0;
 }
-/*void init_shell(irecv_client_t client) {
-	irecv_error_t error = 0;
-	load_command_history();
-	irecv_event_subscribe(client, IRECV_PROGRESS, &progress_cb, NULL);
-	irecv_event_subscribe(client, IRECV_RECEIVED, &received_cb, NULL);
-	irecv_event_subscribe(client, IRECV_PRECOMMAND, &precommand_cb, NULL);
-	irecv_event_subscribe(client, IRECV_POSTCOMMAND, &postcommand_cb, NULL);
-	while (!quit) {
-		error = irecv_receive(client);
-        
-		if (error != IRECV_E_SUCCESS) {
-			debug("%s\n", irecv_strerror(error));
-			break;
-		}
-        
-		char* cmd = readline("> ");
-		if (cmd && *cmd) {
-			error = irecv_send_command(client, cmd);
-			if (error != IRECV_E_SUCCESS) {
-				quit = 1;
-			}
-            
-			append_command_to_history(cmd);
-			free(cmd);
-		}
-	}
-}*/
+
 void help() {
     printf("\n");
-    printf("AESPayload; uploads the greenpois0n custom iBSS payload to device\n");
+    printf("AESPayload "VERSION"; uploads the greenpois0n custom iBSS payload to device\n");
     printf("Usage: AESPayload [arg] (No brackets)\n");
     printf("==========================================================\n");
     printf("[-go] - Start process (please connect the device in DFU mode)\n");
+    printf("[-irecovery] - Start irecovery shell in verbose mode\n");
     printf("==========================================================\n");
     printf("\n");
+}
+void load_command_history() {
+	read_history(FILE_HISTORY_PATH);
+}
+void append_command_to_history(char* cmd) {
+	add_history(cmd);
+	write_history(FILE_HISTORY_PATH);
 }
 int main(int argc, char* argv[]) {
 	
@@ -119,8 +104,9 @@ int main(int argc, char* argv[]) {
             pois0n_inject("2");
         }
             pois0n_exit();
+        }if (!strcmp(argv[1],"-irecovery")) {
+            system("build/irecovery -v -s");
         }
-        
         
     }else {
         help();
