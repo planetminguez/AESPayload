@@ -14,3 +14,9 @@ What devices can I use?
 * iPod 3G
 * iPod 2G
 * iPod 1G
+* iPad 1G
+
+Why can't I use my A5+ devices
+------------------------------
+Why? BECAUSE! A5+ devices are not eligable for the limera1n bootrom exploit
+allowing the custom iBSS to be executed!
