@@ -1,0 +1,11 @@
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: libirecovery
+Description: iDevice Bootloader Recovery Shell
+Requires: libusb-1.0 >= 1.0.8
+Version: 2.0
+Libs: -L${libdir} -lirecovery
+Cflags: -I${includedir}
