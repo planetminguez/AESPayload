@@ -24,3 +24,5 @@ allowing the custom iBSS to be executed!
 Credits
 -------
 Copyright © Chronic-Dev 2012
+Copyright © Dylan Laws (Haifisch) 2012
+Copyright © Joshua Hill (posixninja) 2012
