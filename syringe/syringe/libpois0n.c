@@ -266,6 +266,25 @@ int upload_firmware_payload(const char* type) {
 			debug("Loaded payload for iBoot on n90ap\n");
 		}
 		break;
+            case DEVICE_IPHONE42:
+            if (!strcmp(type, "iBSS")) {
+                payload = iBSS_n92ap;
+                size = sizeof(iBSS_n92ap);
+                debug("Loaded payload for iBSS on n90ap\n");
+            }
+            /*
+             if(!strcmp(type, "iBEC")) {
+             payload = iBEC_n90ap;
+             size = sizeof(iBEC_n90ap);
+             debug("Loaded payload for iBEC on n90ap\n");
+             }
+             */
+            if (!strcmp(type, "iBoot")) {
+                payload = iBoot_n92ap;
+                size = sizeof(iBoot_n92ap);
+                debug("Loaded payload for iBoot on n90ap\n");
+            }
+            break;
 
 	case DEVICE_IPOD2G:
 		if (!strcmp(type, "iBSS")) {
