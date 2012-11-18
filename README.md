@@ -9,6 +9,7 @@ What devices can I use?
 * iPhone 3GS
 * iPhone 3G
 * iPhone 4 (GSM)
+* iPhone 4 (CDMA)
 * iPhone 2G
 * iPod 4G
 * iPod 3G
