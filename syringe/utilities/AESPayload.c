@@ -74,20 +74,13 @@ int progress_cb(irecv_client_t client, const irecv_event_t* event) {
 
 void help() {
     printf("\n");
-    printf("AESPayload "VERSION"; uploads the greenpois0n custom iBSS payload to device\n");
+    printf("AESPayload "VERSION";");
     printf("Usage: AESPayload [arg] (No brackets)\n");
     printf("==========================================================\n");
     printf("[-go] - Start process (please connect the device in DFU mode)\n");
     printf("[-irecovery] - Start irecovery shell in verbose mode\n");
     printf("==========================================================\n");
     printf("\n");
-}
-void load_command_history() {
-	read_history(FILE_HISTORY_PATH);
-}
-void append_command_to_history(char* cmd) {
-	add_history(cmd);
-	write_history(FILE_HISTORY_PATH);
 }
 int main(int argc, char* argv[]) {
 	
