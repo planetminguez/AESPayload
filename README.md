@@ -20,7 +20,7 @@ What devices can I use?
 Why can't I use my A5+ devices
 ------------------------------
 Why? BECAUSE! A5+ devices are not eligable for the limera1n bootrom exploit
-allowing the custom iBSS to be executed!
+allowing the custom iBSS to be executed.
 
 Credits
 -------
